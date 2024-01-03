@@ -7,12 +7,13 @@
     --size-s: 14px;
     --size-d: 16px;
     --size-l: 20px;
+    --size-b: 36px;
 
     --color-border: #dee2e6;
     --color-primary: rgb(46, 46, 255);
     --color-white: #fff;
     --color-title: #212529;
-    --color-text: #343a40;
+    --color-text: #5a5a5a;
 
     --border-radius: 12px;
 
@@ -100,7 +101,7 @@
     display: flex;
     justify-content: space-between;
 
-    padding: var(--space-l) 0;
+    padding-bottom: 40px;
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -126,25 +127,25 @@
     display: flex;
     align-items: center;
     gap: var(--space-b);
-
-    padding-bottom: 40px;
-    border-bottom: 1px solid var(--color-border);
 }
 
 .hero_image {
+    display: flex;
     width: 500px;
     height: 500px;
+    
     border-radius: var(--border-radius);
 }
 
 .hero_content {
     display: flex;
     flex-direction: column;
+    padding-left: 80px;
     gap: var(--space-l);
 } 
 
 .hero_title {
-    font-size: 50px;
+    font-size: var(--size-b);
     color: var(--color-title);
     font-weight: var(--weight-title);
     line-height: 120%;
@@ -152,94 +153,112 @@
 
 .hero_text {
     color: var(--color-text);
-    font-size: var(--size-l);
+    font-size: var(--size-d);
     font-weight: var(--weight-text);
     line-height: 170%;    
 }
 
-.blog {
+.button {
     display: flex;
-    gap: var(--space-b);
-
-    padding-bottom: 40px;
-    border-bottom: 1px solid var(--color-border);
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: var(--space-b);
-}
-
-.card_image {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-}
-
-.card_title {
-    font-size: 32px;
-    font-weight: var(--weight-title);
-    color: var(--color-title);
-}
-
-.card_text {
-    font-weight: var(--weight-text);
-    font-size: var(--size-d);
-    color: var(--color-text);
-}
-
-.button {
-    display: inline-block;
     font-size: var(--size-d);
     text-decoration: none;
-    padding: var(--space-m) var(--space-xm);
-    border-radius: var(--border-radius);
+    
 }
 
-.card_button {
+.hero_button {
+    width: 120px;
+    height: 36px;
+
+    padding: var(--space-m) var(--space-xm);
+    border-radius: 4px;
     color: var(--color-white);
-    background-color: var(--color-primary); 
+    background-color: #6C757D;
 }
 
 .button:hover {
     opacity: 0.7;
 }
 
+.featured {
+    display: flex;
+    padding: var(--space-b); 
+    
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.featured_content {
+    flex-direction: column;
+    margin: 26px;
+    gap: var(--space-l);
+}
+
+.featured_image{
+    height: 64px;
+    width: 64px;
+    border-radius: 12%;
+} 
+
+.featured_title {
+    display: flex;
+    font-size: 32px;
+    font-weight: var(--weight-title);
+    margin-top: var(--space-l);
+    color: var(--color-title);
+}
+
+.featured_text {
+    font-weight: var(--weight-text);
+    font-size: var(--size-d);
+    margin-top: var(--space-l);
+    color: var(--color-text);
+}
+
+.featured_button {
+    font-size: var(--size-d);
+    margin-top: var(--space-l);
+    text-decoration: underline;
+    
+    border-radius: var(--border-radius);
+    justify-content: start;
+}
+
+.featured_button:hover {
+    color: var(--color-primary); 
+}
+
 .form {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
-    background: var(--color-primary);
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--color-border);
+
     padding: var(--space-l);
-    border-radius: var(--border-radius);
+    border-radius: 8px;
+    background: #563D7C;   
 }
 
-.form_content {
+
+.actions_content {
     display: flex;
     flex-direction: column;
-    gap: var(--space-m);
+    justify-content: space-around;
 }
 
-.form_title {
-    font-size: 27px;
+.actions_title {
+    font-size: 24px;
     font-weight: var(--weight-title);
     color: var(--color-white);
 }
 
-.form_info {
-    font-size: var(--size-d);
-    font-weight: var(--weight-text);
-    color: var(--color-white); 
-}
-
-.form_button {
+.action_button {
+    width: 240px;
+    height: 52px;
+    font-size: var(--size-l);
+    border-radius: 6px;
     background-color: var(--color-white);
-    width: 100%;
-    max-width: 160px;
-    color: var(--color-text);
+    color: #212529;
 }
