@@ -101,8 +101,8 @@
     display: flex;
     justify-content: space-between;
 
-    padding-bottom: 40px;
-    border-bottom: 1px solid var(--color-border);
+    padding: 40px 0;
+    border-top: 1px solid var(--color-border);
 }
 
 .footer_copyright {
