@@ -1,0 +1,17 @@
+<div class="logo_x_nav">
+    <div class="logo">
+        <span class="badge text-bg-purple">{{brandName}}</span>
+    </div>
+
+    <div class="nav">
+        {{> navlinks link=header}}
+    </div>
+</div>
+<div class="onl_ad">
+    <div class="ad">
+        {{#with ad}}
+        <a class="ad" href="{{url}}">{{text}}</a>
+        {{/with}}
+    </div>
+    <div class="online"> Users online: {{userOnline}}</div>
+</div>
